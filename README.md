@@ -9,7 +9,7 @@
 
 //      - order total w/out shipping
 
-//      - destination (USA, Canada, Australia)
+//      - destination (USA, Canada, Australia, or Pluto. Some people say it isn't a planet anymore, but what do they know?)
 
 //      - weight of shipment
 
