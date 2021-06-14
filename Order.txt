@@ -1,0 +1,8 @@
+Your item is                                                 GLASSWARE
+The weight of your shipment is:                              654
+The dimensions of your shipment are:                         48x45x99
+The freight class of your shipment is:                       CLASS 175
+Your shipping cost is                                        $19.00
+You are shipping to                                          AUS
+Your total shipping costs are                                $131.00
+------------------------------------------------------------Thank you!
