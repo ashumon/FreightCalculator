@@ -3,7 +3,7 @@
 //      - item name
 //      - is fragile? + 2.00
 //      - order total w/out shipping
-//      - destination (USA, Canada, Australia)
+//      - destination (USA, Canada, Australia, or Pluto. Some people say it's not a planet anymore, but what do they know?)
 // We will use a multi-alternative if statement to determine shipping cost based on Order cost and country
 // We will then print out the information to the console and write it to a file.
 //
@@ -47,6 +47,9 @@ int main()
     const float AUS1 = 10.00;
     const float AUS2 = 14.00;
     const float AUS3 = 17.00;
+    const float PLU1 = 850.00;
+    const float PLU2 = 900.00;
+    const float PLU3 = 999.99;
 
 
     //string variables
@@ -55,7 +58,7 @@ int main()
     const string Q1 = "Please enter the item name (no spaces)";
     const string Q2 = "Is the item fragile? (y=yes/n=no)";
     const string Q3 = "Please enter your order total";
-    const string Q4 = "Please enter destination (USA, CAN, AUS)";
+    const string Q4 = "Please enter destination (USA, CAN, AUS, PLU)";
     const string Q5 = "Please enter the weight of your shipment";
     const string Q6 = "Please enter the length of your shipment";
     const string Q7 = "Please enter the width of your shipment";
@@ -108,7 +111,7 @@ int main()
     cout << Q4 << setw(WIDTH - Q4.length()) << ":";
     cin >> dest;
     transform(dest.begin(), dest.end(), dest.begin(), toupper);
-    if (dest != "USA" && dest != "CAN" && dest != "AUS")
+    if (dest != "USA" && dest != "CAN" && dest != "AUS" && dest != "PLU")
     {
         cout << "Invalid entry, exiting" << endl;
         system("pause");
@@ -183,6 +186,8 @@ int main()
             ShippingCost = USA1;
         else if (dest == "CAN")
             ShippingCost = CAN1;
+        else if (dest == "PLU")
+            ShippingCost = PLU1;
         else
             ShippingCost = AUS1;
     }
@@ -192,6 +197,8 @@ int main()
             ShippingCost = USA2;
         else if (dest == "CAN")
             ShippingCost = CAN2;
+        else if (dest == "PLU")
+            ShippingCost = PLU2;
         else
             ShippingCost = AUS2;
     }
@@ -201,6 +208,8 @@ int main()
             ShippingCost = USA3;
         else if (dest == "CAN")
             ShippingCost = CAN3;
+        else if (dest == "PLU")
+            ShippingCost = PLU3;
         else
             ShippingCost = AUS3;
 
